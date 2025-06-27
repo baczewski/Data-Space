@@ -1,0 +1,16 @@
+{
+    "@context": {
+      "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+    },
+    "@type": "TransferRequestDto",
+    "connectorId": "provider",
+    "counterPartyAddress": "http://localhost:19194/protocol",
+    "contractId": "d26bc9e1-a77c-414c-bfe5-57f8b78f6e59",
+    "protocol": "dataspace-protocol-http",
+    "transferType": "HttpData-PUSH",
+    "dataDestination": {
+      "type": "HttpData",
+      "baseUrl": "http://localhost:4000/api/consumer/store"
+    }
+  }
+  
