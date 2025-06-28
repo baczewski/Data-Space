@@ -5,7 +5,7 @@ import subprocess
 
 """
 Steps to run it menually:
-    You will need 4 terminals:
+    You will need 5 terminals:
 
     On Terminal X run "./shell_scripts/build_connector.sh" to build the connectors
     On Terminal 1 run "./shell_scripts/run_connector_consumer.sh" to run the consumer
@@ -13,6 +13,7 @@ Steps to run it menually:
     On Terminal 3 run:
         "docker build -t http-request-logger util/http-request-logger"
         "docker run -p 4000:4000 http-request-logger"
+    On Terminal 4 run "python -m http.server 8000" to start http server on port 8000
     On Terminal X run "./gradlew transfer:transfer-03-consumer-pull:provider-proxy-data-plane:build"
 
     On Terminal X run "./shell_scripts/create_asset_policy.sh"

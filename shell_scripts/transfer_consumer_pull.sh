@@ -34,7 +34,7 @@ edt_authorization=$(curl http://localhost:${PORT}/management/v3/edrs/${transfer_
 
 echo "Authorization: ${edt_authorization}"
 
-data_response=$(curl --location --request GET "http://localhost:$PUBLIC_PORT/public/" \
+data_response=$(curl --location --request GET "http://localhost:$PUBLIC_PORT/public/data/$PROVIDER.json" \
     --header "Authorization: ${edt_authorization}")
 
 echo "Response: ${data_response}"
