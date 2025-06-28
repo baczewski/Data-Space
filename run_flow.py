@@ -15,6 +15,8 @@ Steps to run it menually:
         "docker run -p 4000:4000 http-request-logger"
     On Terminal X run "./gradlew transfer:transfer-03-consumer-pull:provider-proxy-data-plane:build"
 
+    On Terminal X run "./shell_scripts/create_asset_policy.sh"
+
     On Terminal X run "./shell_scripts/fetch_catalog_negotiate.sh" to set up contract negotiation
     On Terminal X run "./shell_scripts/transfer_provider_push.sh" to transfer the data to the provider
 
